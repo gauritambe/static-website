@@ -111,6 +111,6 @@ For detailed instructions such as:
 * Uploading files to S3
 * Setting up Route53 and SSL
 
-👉 **Please refer to the complete Project Guide document.**
+👉 **Please refer to the complete Project Guide document.** [Project Guide](https://docs.google.com/document/d/1sm0pwNgMkBJzfVzad_azJdk0wFdVOvz1F3kcmiVLbeE/edit?usp=sharing)
 
 ---
