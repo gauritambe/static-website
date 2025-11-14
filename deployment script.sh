@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create an environment variable for the S3 zip file
-export S3_URI="s3://dev-aosnote-app-webfiles15/techmax.zip"
+export S3_URI="<your-s3-uri-of-zip>"
 
 # Update the packages on the EC2 instance
 sudo yum update -y
@@ -19,14 +19,15 @@ sudo rm -rf *
 sudo aws s3 cp "$S3_URI" .
 
 # Unzip the downloaded file
-sudo unzip techmax.zip
+sudo unzip jupiter.zip
 
 # Copy the contents to the html directory
-sudo cp -R techmax/. .
+sudo cp -R jupiter/. .
 
 # Clean up zip file and extracted folder
-sudo rm -rf techmax techmax.zip
+sudo rm -rf jupiter jupiter.zip
 
 # Enable and start Apache service
 sudo systemctl enable httpd
 sudo systemctl start httpd
+
